@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<center>
+<img src="login.png" width="250" height="250">
+<div>
+<h1 style="color:green;">Login Page</h1>
+
+  <form>
+   <b><i><label>Username:</label><br>
+  <input type="email" id="email" name="email"><br>
+<br>
+ <label>Password:</label><br>
+  <input type="password" id="myInput" name="pwd" 
+   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10}" 
+   title="Use atleast 1 uppercase,Lowercase,special character" 
+   size="10">
+  <input type="checkbox" onclick="myFunction()">Show Password
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script><br>
+  <br></b></i>
+  <input type="submit" value="Submit"><br>
+</form> 
+<br>
+<a href="default.asp" target="_blank">Forget Password</a><br>
+
+</div>
+</center>
+</body>
+</html>
+
+
+style="background-color:DodgerBlue;"
